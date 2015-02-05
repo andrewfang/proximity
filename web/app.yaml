@@ -1,0 +1,20 @@
+application: proximity
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /assets
+  static_dir: assets
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /
+  script: index.php
