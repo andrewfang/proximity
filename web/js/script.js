@@ -1,7 +1,7 @@
 var refresh = function() {
   var h = window.innerHeight;
   var element = document.getElementById("main");
-  element.style.height = h - 30 + "px";
+  element.style.height = h + "px";
 
   //var title = document.getElementById("title");
   //title.style.marginTop = (h - 200)/2 + "px";
