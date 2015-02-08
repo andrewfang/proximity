@@ -25,7 +25,6 @@ h2 {
   background-attachment: fixed;
   height: 400px;
   margin-bottom: 0px;
-  padding-top: 50px;
 }
 #mainLogo {
   margin-top: 50px;
@@ -36,6 +35,11 @@ h2 {
   font-size: 25px;
   font-weight: 300;
 }
+#emailDesc {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
 .mainSub {
   margin-left: 30px;
 }
@@ -88,4 +92,32 @@ nav {
 }
 .noA:hover {
   text-decoration: none;
+}
+
+/* Launch Rock styles*/
+
+.signup-email {
+  height: 44px !important;
+  margin-left: 10px !important;
+}
+input.LR-sign-up-submit{
+  background-color: #24cdb5 !important;
+  background-image: none !important;
+  text-shadow: none !important;
+}
+.LR-sign-up-container {
+  margin: 0 !important;
+}
+.LR-box-inner {
+  margin-top: 0 !important;
+}
+.LR-site-share-container {
+  background: none !important;
+  padding: 0 !important;
+  margin-left: 30px !important;
+  text-shadow: none !important;
+}
+#thanks {
+  text-shadow: none !important;
+  font-size: 20px;
 }
