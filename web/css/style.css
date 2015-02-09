@@ -98,7 +98,7 @@ nav {
 
 .signup-email {
   height: 44px !important;
-  margin-left: 10px !important;
+  margin-left: 5px !important;
 }
 input.LR-sign-up-submit{
   background-color: #24cdb5 !important;
@@ -119,5 +119,5 @@ input.LR-sign-up-submit{
 }
 #thanks {
   text-shadow: none !important;
-  font-size: 20px;
+  font-size: 20px !important;
 }
