@@ -1,52 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport"></meta>
-<meta property="og:title" content=" " />
-<meta property="og:type" content="company" />
-<meta property="og:site_name" content=" " />
-<meta property="og:description" content="Sign up for exclusive first access!" />
-<meta property="og:url" content="proximity-app.com" />
-<meta property="og:image" content="" />
-<title>Proximity</title>
-<link rel="stylesheet" type="style/css" href="bootstrap/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="style/css" href="css/style.css"/>
-<link rel="icon" type="icon" href="assets/icon.ico" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'/>
+  <meta name="viewport"></meta>
+  <meta property="og:title" content=" " />
+  <meta property="og:type" content="company" />
+  <meta property="og:site_name" content=" " />
+  <meta property="og:description" content="Sign up for exclusive first access!" />
+  <meta property="og:url" content="proximity-app.com" />
+  <meta property="og:image" content="" />
+  <title>Proximity</title>
+  <link rel="stylesheet" type="style/css" href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="style/css" href="css/style.css"/>
+  <link rel="icon" type="icon" href="assets/icon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container-fluid" id="main">
+<nav class="navbar navbar-default navbar-fixed-top" id="proxNav">
+  <div class="container-fluid" id="navContainer">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/icon.png" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="navbutton" href="#home">Home</a></li>
+        <li><a class="navbutton" href="#demo">Demo</a></li>
+        <li><a class="navbutton" href="#upcoming">Upcoming</a></li>
+        <li><a class="navbutton" href="#about">About Us</a></li>
+        <li><a class="navbutton" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="filler" id="home"></div>
+  <div class="container-fluid" id="homeBody">
     <div class="row">
-      <div class="col-md-7"></div>
-      <div id="mainLogo" class="col-md-4">
-        <img src="assets/icon.png" />
+      <div class="col-md-7 homeText">
+        <div class="row">
+          <p id="titleDesc" >Locate and chat with your friends off the grid</p>
+        </div>
+        <div class="row">
+          <p>No WIFI or 3G required <BR>
+              Just turn on Bluetooth and you're ready to go.</p>
+        </div>
+        <div class="row">
+          <p class="smallDesc15">Enter your email below to be notified of our launch!</p>
+        </div>
+        <div class="row">
+          <div id="lr-widget" rel="HJGH6UL0"></div>
+          <script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
+        </div>
+      </div>
+      <div class="col-md-3" align="center">
+        <img id="splashPhoto" class="img-responsive" src="assets/iPhone.png" />
+        <p>1st Place $100k winner of the 2014 Salesforce $1M Hackathon</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-7 mainSub"><p>Locate and chat with your friends off the grid</p></div>
     </div>
-    <div class="row">
-      <div class="col-md-7 mainSub"><p>No WIFI or 3G required</p></div>
-    </div>
+  </div>
 
-    <div class="row">
-      <div class="col-md-7 mainSub"><p id="emailDesc">Enter your email below to be notified of our launch!</p></div>
+  <div class="filler" id="demo"></div>
+  <div class="container-fluid" id="demoBody" align="center">
+    <h2>How does Proximity work?</h2>
+    <video width="640" height="480" controls>
+      <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="filler" id="upcoming"></div>
+  <div class="container-fluid" id="upcomingBody">
+    <div id="watches" class="row">
+      <div class="col-md-2" align="center">
+        <img class="img-responsive" src="assets/watch1.png" />
+        <h3>Apple Watch</h3>
+      </div>
+      <div class="col-md-2" style="padding-top:50px">
+        <img class="img-responsive" src="assets/watch2.png" />
+      </div>
+      <div class="col-md-2">
+        <img class="img-responsive" src="assets/watch3.png" />
+      </div>
+      <div class="col-md-6" align="right">
+        <h3 id="iBeacon">iBeacon API</h3>
+      </div>
     </div>
+  </div>
+
+  <div class="filler" id="about"></div>
+  <div class="container-fluid" id="aboutBody">
     <div class="row">
-      <div class="col-md-12">
-        <!-- Begin LaunchRock Widget -->
-        <div id="lr-widget" rel="HJGH6UL0"></div>
-        <script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
-        <!-- End LaunchRock Widget -->
+      <div class="col-md-6">
+        <div class="circle"></div>
+      </div>
+      <div id="aboutPeople" class="col-md-6">
+        <div class="row" align="center">
+          <h2>About Us</h2>
+        </div> 
+        <div class="row">
+          <p>We're a group of coders, designers, and hackers with a strong interest in all things bluethooth and mobile.</p>
+          <p>Karen and Alex are siblings, Andrew is their cousin, and Charels is a co-worker of Karen's.</p>
+          <p>We're located in San Francisco, CA.</p>
+        </div> 
+
+        <div class="row">
+          <h3>Karen Yee 
+            <a class="peopleLink" href="https://www.linkedin.com/in/yeekaren">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </h3>
+          <p class="peopleDesc">Product, Design</p>
+        </div> 
+        <div class="row">
+          <h3>Alex Yee 
+            <a class="peopleLink" href="https://www.linkedin.com/in/alexyee1">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a class="peopleLink" href="http://personalweb-dev.elasticbeanstalk.com">
+              <i class="fa fa-link"></i>
+            </a>
+          </h3>
+          <p class="peopleDesc">iOS, Sensors</p>
+        </div> 
+        <div class="row">
+          <h3>Charles Wang
+            <a class="peopleLink" href="https://www.linkedin.com/in/charleswangsf">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </h3>
+          <p class="peopleDesc">iOS, Backend</p>
+        </div> 
+        <div class="row">
+          <h3>Andrew Fang
+            <a class="peopleLink" href="https://linkedin.com/in/andrewbfang">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a class="peopleLink" href="http://andrewbfang.com">
+              <i class="fa fa-link"></i>
+            </a>
+          </h3>
+          <p class="peopleDesc">Web, Backend</p>
+        </div> 
+  
       </div>
     </div>
   </div>
   
+  <div class="filler" id="contact"></div>
+  <div class="container-fluid" id="contactBody">
+    <div class="row" id="contactInfo">
+      <h2>Contact us</h2>
+      <p>proximitymobile14@gmail.com</p>
+    </div>
+  </div>
+
   </div>
 </body>
 <script src="js/script.js"></script>
+<script src="js/parallax.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

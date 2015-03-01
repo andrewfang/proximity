@@ -2,9 +2,9 @@ html, body{
   margin: 0;
   padding: 0;
 }
-h1 {
+h1,h2,h3 {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 p {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -17,8 +17,31 @@ h2 {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: bold;
 }
-#main {
-  background-image: url('../assets/background.png');
+.filler {
+  height: 71px;
+}
+#navbar-collapse {
+  border: none !important;
+}
+#homeBody {
+  background-image: url('../assets/home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  height: 750px;
+  margin-bottom: 0px;
+}
+#upcomingBody {
+  background-image: url('../assets/upcoming.png');
+  background-size: auto 500px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 0px;
+}
+#aboutBody {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -26,22 +49,33 @@ h2 {
   height: 400px;
   margin-bottom: 0px;
 }
-#mainLogo {
-  margin-top: 50px;
-  margin-left: 30px;
+#contactBody {
+  background-image: url('../assets/contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 400px;
+  margin-bottom: 0px;
 }
-.mainSub p {
+/* Home Stuff */
+#homeBody p {
   font-family: 'Open Sans', 'Helvetica', sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-}
-#emailDesc {
-  margin-top: 30px;
   font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
 }
-
-.mainSub {
-  margin-left: 30px;
+#titleDesc {
+  font-size: 30px !important;
+  font-weight: 400 !important;
+}
+.smallDesc15 {
+  font-size: 15px !important;
+}
+#splashPhoto {
+  height: 350px;
+  margin-top: 50px;
 }
 #signUpBtn {
   background: #24cdb5;
@@ -52,39 +86,23 @@ h2 {
   font-size: 20px;
   font-weight: 300;
 }
-#jumboText h1 {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  background-color: rgba(0, 0, 0, .3);
-  color: #efefef;
-  padding: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-}
-#jumboText {
-  width: 55%;
+.homeText {
+  margin-top: 10%;
+  margin-left: 5%;
 }
 nav {
-  background-color: #24cdb5 !important;
-  border-bottom: 10px solid #13bca4 !important;
+  background-color: #fff !important;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-bottom: solid #fff 1px !important;
 }
-#bar{
-  padding: 5px;
-  width:100%;
-  height: 30px;
-  background: #24cdb5;
-  margin: 0px;
+.navbar-brand img {
+  max-width: 200px !important
 }
-.navdiv {
-  padding: 0;
-  padding-top: 9px;
-  margin: 0;
-  height: 50px;
-  width: 100%;
-}
-#logo {
-  height: 32px;
+.navbutton{
+  padding: 25px !important;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
 }
 .noA {
   text-decoration: none;
@@ -94,8 +112,45 @@ nav {
   text-decoration: none;
 }
 
-/* Launch Rock styles*/
+/* Upcoming */
+#iBeacon {
+  padding-top: 25%;
+  padding-right: 20px;
+  color: #fff;
+}
+#watches {
+  padding-left: 50px;
+  padding-top: 50px;
+}
 
+/* About */
+.circle{
+  width:500px;
+  height:500px;
+  border-radius:500px;
+  background-image: url('../assets/about.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+#aboutPeople {
+  padding-right: 80px;
+}
+.peopleDesc {
+  padding-left: 20px;
+}
+.peopleLink {
+  padding-left: 10px;
+}
+
+#contactInfo {
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+
+
+/* Launch Rock styles*/
 .signup-email {
   height: 44px !important;
   margin-left: 5px !important;
@@ -104,12 +159,15 @@ input.LR-sign-up-submit{
   background-color: #24cdb5 !important;
   background-image: none !important;
   text-shadow: none !important;
+  font-size: 15px !important;
+  width: 150px !important;
 }
 .LR-sign-up-container {
   margin: 0 !important;
 }
 .LR-box-inner {
   margin-top: 0 !important;
+  margin-left: 0 !important;
 }
 .LR-site-share-container {
   background: none !important;
