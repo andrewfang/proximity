@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport"></meta>
-  <meta property="og:title" content=" " />
-  <meta property="og:type" content="company" />
-  <meta property="og:site_name" content=" " />
-  <meta property="og:description" content="Sign up for exclusive first access!" />
-  <meta property="og:url" content="proximity-app.com" />
-  <meta property="og:image" content="" />
+  <meta name="author" content="Karen Yee">
+  <meta name="author" content="Alex Yee">
+  <meta name="author" content="Charles Wang">
+  <meta name="author" content="Andrew Fang">
+  <meta name="description" content="Locate and chat with your friends off the grid. No WIFI or 3G required. Just turn on Bluetooth and you're ready to go.">
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Proximity</title>
   <link rel="stylesheet" type="style/css" href="bootstrap/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="style/css" href="css/style.css"/>
   <link rel="icon" type="icon" href="assets/icon.ico" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 990px)" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="css/mobile.css" />
 </head>
 
 <body>
@@ -27,17 +31,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/icon.png" /></a>
+      <a class="navbar-brand"><img src="assets/icon.png" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="navbutton" href="#home">Home</a></li>
-        <li><a class="navbutton" href="#demo">Demo</a></li>
-        <li><a class="navbutton" href="#upcoming">Upcoming</a></li>
-        <li><a class="navbutton" href="#about">About Us</a></li>
-        <li><a class="navbutton" href="#contact">Contact</a></li>
+        <li><a class="navbutton" id="navhome" href="#home">Home</a></li>
+        <li><a class="navbutton" id="navdemo" href="#demo">Demo</a></li>
+        <li><a class="navbutton" id="navupcoming" href="#upcoming">Upcoming</a></li>
+        <li><a class="navbutton" id="navabout" href="#about">About Us</a></li>
+        <li><a class="navbutton" id="navcontact" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div><!-- /.container-fluid -->
@@ -74,9 +78,7 @@
   <div class="filler" id="demo"></div>
   <div class="container-fluid" id="demoBody" align="center">
     <h2>How does Proximity work?</h2>
-    <video width="640" height="480" controls>
-      <source src="movie.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <video width="640" height="480" src="assets/demo.mov" controls>
     </video>
   </div>
 
@@ -85,7 +87,7 @@
     <div id="watches" class="row">
       <div class="col-md-2" align="center">
         <img class="img-responsive" src="assets/watch1.png" />
-        <h3>Apple Watch</h3>
+        <h2>Apple Watch</h2>
       </div>
       <div class="col-md-2" style="padding-top:50px">
         <img class="img-responsive" src="assets/watch2.png" />
@@ -95,6 +97,12 @@
       </div>
       <div class="col-md-6" align="right">
         <h3 id="iBeacon">iBeacon API</h3>
+      </div>
+    </div>
+    <div id="mobileWatches" class="row" align="center">
+      <div class="col-md-1">
+        <h2>Apple Watch, iBeacon API</h2>
+        <img class="img-responsive" src="assets/watch1.png" />
       </div>
     </div>
   </div>
@@ -110,12 +118,12 @@
           <h2>About Us</h2>
         </div> 
         <div class="row">
-          <p>We're a group of coders, designers, and hackers with a strong interest in all things bluethooth and mobile.</p>
+          <p>We're a group of coders, designers, and hackers with a strong interest in all things bluetooth and mobile.</p>
           <p>Karen and Alex are siblings, Andrew is their cousin, and Charels is a co-worker of Karen's.</p>
           <p>We're located in San Francisco, CA.</p>
         </div> 
 
-        <div class="row">
+        <div class="row" class="peopleRow">
           <h3>Karen Yee 
             <a class="peopleLink" href="https://www.linkedin.com/in/yeekaren">
               <i class="fa fa-linkedin-square"></i>
