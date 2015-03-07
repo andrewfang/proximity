@@ -11,7 +11,7 @@
   <title>Proximity</title>
   <link rel="stylesheet" type="style/css" href="bootstrap/css/bootstrap.min.css"/>
   <link rel="icon" type="icon" href="assets/icon.ico" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300|Yellowtail|Cookie' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -50,25 +50,26 @@
   <div class="filler" id="home"></div>
   <div class="container-fluid" id="homeBody">
     <div class="row">
-      <div class="col-md-7 homeText">
+      <div class="col-md-5 homeText">
         <div class="row">
-          <p id="titleDesc" >Locate and chat with your friends off the grid</p>
+          <p id="titleDesc" >Locate and chat with your friends even when you're off the grid</p>
         </div>
         <div class="row">
           <p>No WIFI or 3G required <BR>
               Just turn on Bluetooth and you're ready to go.</p>
         </div>
         <div class="row">
-          <p class="smallDesc15">Enter your email below to be notified of our launch!</p>
+          <p class="smallDesc15">Enter your email below for early beta access on iOS</p>
         </div>
         <div class="row">
           <div id="lr-widget" rel="HJGH6UL0"></div>
           <script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
         </div>
       </div>
-      <div class="col-md-3" align="center">
+      <div class="col-md-1"></div>
+      <div class="col-md-3" style="padding:0" align="center">
         <img id="splashPhoto" class="img-responsive" src="assets/iPhone.png" />
-        <p>1st Place $100k winner of the 2014 Salesforce $1M Hackathon</p>
+        <p>1st Place $100k winner of the <BR>2014 Salesforce $1M Hackathon</p>
       </div>
     </div>
 
@@ -76,9 +77,29 @@
   </div>
 
   <div class="filler" id="demo"></div>
-  <div class="container-fluid" id="demoBody" align="center">
-    <h2>How does Proximity work?</h2>
-    <video width="640" height="480" src="assets/demo.mov" controls>
+  <div class="container" id="demoBody" align="center">
+    <h2 id="demoTitle">Proximity helps you find your friends in the crowd</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="circleNumber">
+                1
+            </div>
+            <p>Headed to a busy spot? Create a group and add your friends</p>
+        </div>
+        <div class="col-md-4">
+            <div class="circleNumber">
+                2
+            </div>
+            <p>The app will point you to where each friend is located</p>
+        </div>
+        <div class="col-md-4">
+            <div class="circleNumber">
+                3
+            </div>
+            <p>No WIFI or 3G? No problem! You can still chat with your group</p>
+        </div>
+    </div>
+    <video width="640" height="380" src="assets/demo.mov">
     </video>
   </div>
 
@@ -87,7 +108,6 @@
     <div id="watches" class="row">
       <div class="col-md-2" align="center">
         <img class="img-responsive" src="assets/watch1.png" />
-        <h2>Apple Watch</h2>
       </div>
       <div class="col-md-2" style="padding-top:50px">
         <img class="img-responsive" src="assets/watch2.png" />
@@ -95,13 +115,19 @@
       <div class="col-md-2">
         <img class="img-responsive" src="assets/watch3.png" />
       </div>
-      <div class="col-md-6" align="right">
-        <h3 id="iBeacon">iBeacon API</h3>
+      <div class="col-md-3" align="center">
+        <h2>Apple Watch</h2>
+        <p>Viewing groups and locating friends naturally extends to your wrist</p>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-2" align="center">
+        <h2 id="iBeacon">Android</h2>
+        <p>Don't worry, it's coming soon! (Andrew's on it)</p>
       </div>
     </div>
     <div id="mobileWatches" class="row" align="center">
       <div class="col-md-1">
-        <h2>Apple Watch, iBeacon API</h2>
+        <h2>Apple Watch, Android</h2>
         <img class="img-responsive" src="assets/watch1.png" />
       </div>
     </div>
@@ -109,19 +135,21 @@
 
   <div class="filler" id="about"></div>
   <div class="container-fluid" id="aboutBody">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="circle"></div>
-      </div>
-      <div id="aboutPeople" class="col-md-6">
         <div class="row" align="center">
           <h2>About Us</h2>
         </div> 
         <div class="row">
-          <p>We're a group of coders, designers, and hackers with a strong interest in all things bluetooth and mobile.</p>
-          <p>Karen and Alex are siblings, Andrew is their cousin, and Charels is a co-worker of Karen's.</p>
-          <p>We're located in San Francisco, CA.</p>
-        </div> 
+            <div class="col-md-12">
+                <p>We're all related (literally): Karen & Alex are siblings and Andrew is their cousin. We met Charles via working at a startup.</p>
+                <p>We. LOVE. Hackathons. Why? You get to: 1) build something new, 2) excite an audience, 3) meet great people. In October 2014, we built a prototype of Proximity for the Salesforce $1M Hackathon and won 1st Place, taking home $100k.</p>
+                <p>Bridging offline to online experiences are what we are experts in. Whether its within the realm of e-commerce or medical devices, we're excited to bridget the gap in communication. Armed with the development and startup experiences we've all gained at top universities and major tech companies, we're ready and motivated to bring Proximity to the public.</p>
+            </div> 
+        </div>
+    <div class="row">
+      <div class="col-md-7">
+        <img class="img img-responsive img-thumbnail" src="assets/team.png"/>
+      </div>
+      <div id="aboutPeople" class="col-md-5">
 
         <div class="row" class="peopleRow">
           <h3>Karen Yee 
@@ -129,7 +157,7 @@
               <i class="fa fa-linkedin-square"></i>
             </a>
           </h3>
-          <p class="peopleDesc">Product, Design</p>
+          <p class="peopleDesc">Product, Finance, Design</p>
         </div> 
         <div class="row">
           <h3>Alex Yee 
@@ -147,6 +175,9 @@
             <a class="peopleLink" href="https://www.linkedin.com/in/charleswangsf">
               <i class="fa fa-linkedin-square"></i>
             </a>
+            <a class="peopleLink" href="http://www.charleswang.me">
+              <i class="fa fa-link"></i>
+            </a>
           </h3>
           <p class="peopleDesc">iOS, Backend</p>
         </div> 
@@ -159,7 +190,7 @@
               <i class="fa fa-link"></i>
             </a>
           </h3>
-          <p class="peopleDesc">Web, Backend</p>
+          <p class="peopleDesc">Web, Backend, Android</p>
         </div> 
   
       </div>
@@ -170,7 +201,9 @@
   <div class="container-fluid" id="contactBody">
     <div class="row" id="contactInfo">
       <h2>Contact us</h2>
-      <p>proximitymobile14@gmail.com</p>
+      <p class="contactInfo"><i class="fa fa-fw fa-envelope fa-big"></i> proximitymobile14@gmail.com</p>
+      <p class="contactInfo"><i class="fa fa-fw fa-phone fa-big"></i> 626-354-7097</p>
+      <p class="contactInfo"><i class="fa fa-fw fa-map-marker fa-big"></i>  San Francisco, CA</p>
     </div>
   </div>
 
