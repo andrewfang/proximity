@@ -11,7 +11,7 @@
   <title>Proximity</title>
   <link rel="stylesheet" type="style/css" href="bootstrap/css/bootstrap.min.css"/>
   <link rel="icon" type="icon" href="assets/icon.ico" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300|Yellowtail|Cookie' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:500,400,300' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -80,51 +80,74 @@
   <div class="container" id="demoBody" align="center">
     <h2 id="demoTitle">Proximity helps you find your friends in the crowd</h2>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 steps">
             <div class="circleNumber">
                 1
             </div>
             <p>Headed to a busy spot? Create a group and add your friends</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 steps">
             <div class="circleNumber">
                 2
             </div>
             <p>The app will point you to where each friend is located</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 steps">
             <div class="circleNumber">
                 3
             </div>
             <p>No WIFI or 3G? No problem! You can still chat with your group</p>
         </div>
     </div>
-    <video width="640" height="380" src="assets/demo.mov">
-    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6s3LyXjAmzUA" frameborder="0" allowfullscreen></iframe>
   </div>
 
   <div class="filler" id="upcoming"></div>
   <div class="container-fluid" id="upcomingBody">
+  <div align="center">
+    <h2>Upcoming</h2>
+  </div>
     <div id="watches" class="row">
-      <div class="col-md-2" align="center">
-        <img class="img-responsive" src="assets/watch1.png" />
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-3" align="center">
+            <img class="img-responsive" src="assets/watch1.png" />
+          </div>
+          <div class="col-md-3" style="padding-top:50px">
+            <img class="img-responsive" src="assets/watch2.png" />
+          </div>
+          <div class="col-md-3">
+            <img class="img-responsive" src="assets/watch3.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-5" align="center">
+            <h2>Apple Watch</h2>
+            <p>Viewing groups and locating friends on your wrist is a natural extension of the app</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-2" style="padding-top:50px">
-        <img class="img-responsive" src="assets/watch2.png" />
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-8"></div>
+          <div id="android" class="col-md-4" align="center">
+            <h2>Android</h2>
+            <p>Don't worry, it's coming soon! (Andrew's on it)</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-3" align="center">
+            <img class="img-responsive" id="androidAsset" src="assets/android.png" />
+          </div>
+        </div>
       </div>
-      <div class="col-md-2">
-        <img class="img-responsive" src="assets/watch3.png" />
-      </div>
-      <div class="col-md-3" align="center">
-        <h2>Apple Watch</h2>
-        <p>Viewing groups and locating friends naturally extends to your wrist</p>
-      </div>
-      <div class="col-md-3"></div>
-      <div class="col-md-2" align="center">
-        <h2 id="iBeacon">Android</h2>
-        <p>Don't worry, it's coming soon! (Andrew's on it)</p>
-      </div>
+
     </div>
+
     <div id="mobileWatches" class="row" align="center">
       <div class="col-md-1">
         <h2>Apple Watch, Android</h2>
@@ -137,13 +160,13 @@
   <div class="container-fluid" id="aboutBody">
         <div class="row" align="center">
           <h2>About Us</h2>
-        </div> 
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <p>We're all related (literally): Karen & Alex are siblings and Andrew is their cousin. We met Charles via working at a startup.</p>
                 <p>We. LOVE. Hackathons. Why? You get to: 1) build something new, 2) excite an audience, 3) meet great people. In October 2014, we built a prototype of Proximity for the Salesforce $1M Hackathon and won 1st Place, taking home $100k.</p>
-                <p>Bridging offline to online experiences are what we are experts in. Whether its within the realm of e-commerce or medical devices, we're excited to bridget the gap in communication. Armed with the development and startup experiences we've all gained at top universities and major tech companies, we're ready and motivated to bring Proximity to the public.</p>
-            </div> 
+                <p>Armed with the development and startup experience we've gained at top universities and major tech companies, we're ready and motivated to bring Proximity to the public.</p>
+            </div>
         </div>
     <div class="row">
       <div class="col-md-7">
@@ -152,15 +175,15 @@
       <div id="aboutPeople" class="col-md-5">
 
         <div class="row" class="peopleRow">
-          <h3>Karen Yee 
+          <h3>Karen Yee
             <a class="peopleLink" href="https://www.linkedin.com/in/yeekaren">
               <i class="fa fa-linkedin-square"></i>
             </a>
           </h3>
           <p class="peopleDesc">Product, Finance, Design</p>
-        </div> 
+        </div>
         <div class="row">
-          <h3>Alex Yee 
+          <h3>Alex Yee
             <a class="peopleLink" href="https://www.linkedin.com/in/alexyee1">
               <i class="fa fa-linkedin-square"></i>
             </a>
@@ -169,7 +192,7 @@
             </a>
           </h3>
           <p class="peopleDesc">iOS, Sensors</p>
-        </div> 
+        </div>
         <div class="row">
           <h3>Charles Wang
             <a class="peopleLink" href="https://www.linkedin.com/in/charleswangsf">
@@ -180,7 +203,7 @@
             </a>
           </h3>
           <p class="peopleDesc">iOS, Backend</p>
-        </div> 
+        </div>
         <div class="row">
           <h3>Andrew Fang
             <a class="peopleLink" href="https://linkedin.com/in/andrewbfang">
@@ -191,12 +214,12 @@
             </a>
           </h3>
           <p class="peopleDesc">Web, Backend, Android</p>
-        </div> 
-  
+        </div>
+
       </div>
     </div>
   </div>
-  
+
   <div class="filler" id="contact"></div>
   <div class="container-fluid" id="contactBody">
     <div class="row" id="contactInfo">
