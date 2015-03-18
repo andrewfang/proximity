@@ -22,7 +22,7 @@ label {
   border: none !important;
 }
 #homeBody {
-  background-image: url('../assets/home.png');
+  background-image: url('../assets/home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -48,7 +48,7 @@ label {
   margin: 0 150px 0 150px;
 }
 #contactBody {
-  background-image: url('../assets/contact.png');
+  background-image: url('../assets/contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -125,6 +125,9 @@ nav {
 .steps {
   padding-left: 70px;
   padding-right: 70px;
+}
+#video {
+  padding-top: 25px;
 }
 
 /* Upcoming */

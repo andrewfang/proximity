@@ -1,0 +1,5 @@
+*.DS_Store
+*.psd
+deploy.sh
+web/launchrock.html
+proximitydemo/
